@@ -1,3 +1,5 @@
+<?php include "app\controllers\LoginController.php" ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,10 +11,10 @@
 <body>
     <div class="container">
         <h1>Login</h1>
-        <form action="#" method="POST">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Senha" required>
-            <button type="submit">Sign In</button>
+        <form action="/app/controllers/LoginController.php" method="POST">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="senha" placeholder="Senha">
+            <button type="submit">Entrar</button>
             <a href="/app/views/new-register.php">Cadastrar-se</a>
         </form>
     </div>
